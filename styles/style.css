@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --primaryTextColor: #232e35;
+    --secondaryTextColor: #656d72;
+
+    --borderColor: #f1f1f1;
+    --lineColor: #d9d9d9;
+
+    --primaryBackroundColor: #fff;
+    --secondaryBackroundColor: #fbfbfb;
+    --thirdBackroundColor: #f5f3fe;
+
+    --primaryIconColor: #7e74f1;
+    --primaryIconColorHover: #5d51e8;
+
+    --selectionPadding: 6rem 0;
+    --itemBorderRadius: 0.7rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, strong{
+    color: var(--primaryTextColor);
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: var(--secondaryTextColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-widht: 90%){
+    .main-container{
+        width: 90%;
+    }
+}
+/* buttons */
+.btn {
+    padding: 1rem 1.5rem;
+    background: white;
+    border: 1.5px solid  var(--borderColor);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* Titles */
+.pretitle {
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: var(--secondaryTextColor);
+    position: relative;
+    padding-left: 3px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    padding-left: 30px;
+padding-top: 40px;
+    padding-right: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+/* logo navigation menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.logo a {
+    color: var(--primaryTextColor);
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+}
+
+/* Burger */
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #000;
+    margin: 7px;
+    transition: all .3s;
+    z-index: 99;
+}
+
+.burger {
+    display: none;
+    position: fixed;
+    top: 33;
+    right: 35px;
+}
+
+/* hero selection */
+#hero{
+    height: 720px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.hero-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: .5rem 0 1rem;
+}
+
+.hero-name span {
+    color: var(--primaryIconColor);
+}
+
+.hero-rigth img {
+    width: 90%;
+}
+
+.hero-rigth {
+    display: flex;
+    justify-content: center;
+}
+
+/* Services Content */
+#services{
+    background-color: var(--secondaryBackroundColor);
+    padding: var(--selectionPadding);
+}
+
+#services .pre-title{
+    font-weight: 300;
+    letter-spacing: 5px;
+    align-items: center;
+}
+
+#services h3 {
+    display: contents;
+    color: #656d72;
+    text-align: center;
+}
+
+#services .jarak {
+    font-weight: 300;
+}
+
+#services .space-h3 {
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+}
+
+.services .pre-title {
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.services-main-container {
+    align-items: center;
+    justify-content: center;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services{
+    padding: 3rem 2rem;
+    text-align: center;
+    justify-content: center;
+    background: var(--primaryBackroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.services h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1.05rem;
+}
+
+.services-icon{
+    background: var(--thirdBackroundColor);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 0.5rem;
+
+}
+
+.services-icon svg {
+    fill: var(--primaryIconColor);
+}
