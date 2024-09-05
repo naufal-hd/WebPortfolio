@@ -237,3 +237,23 @@ nav ul li a {
 .services-icon svg {
     fill: var(--primaryIconColor);
 }
+
+/* Portfolios */
+
+#portfolios {
+    padding: var(--selectionPadding);
+}
+
+#portfolios .small-text {
+    display: flex;
+}
+
+.small-text .garis-mini {
+    margin-right: 10px;
+    font-weight: 300;
+}
+
+.small-text .small {
+    font-weight: 300;
+    letter-spacing: 5px;
+}
