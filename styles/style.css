@@ -84,7 +84,7 @@ a {
 .grid-3 {
     display: grid;
     padding-left: 30px;
-padding-top: 40px;
+    padding-top: 40px;
     padding-right: 30px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
@@ -240,12 +240,18 @@ nav ul li a {
 
 /* Portfolios */
 
-#portfolios {
+#portfolio {
     padding: var(--selectionPadding);
 }
 
+#portfolio .pre-title {
+    text-align: center;
+}
+
+
 .small-text {
     display: flex;
+    justify-content: center;
 }
 
 .small-text .garis-mini {
@@ -310,4 +316,49 @@ nav ul li a {
     border: 1px solid var(--borderColor);
     padding: .4rem .1rem;
     color: var(--secondaryTextColor);
+}
+
+/* portfolio 2 */
+
+#new-sec {
+   padding-left: 100px;
+   padding-right: 100px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.new-frame {
+    width: 376px;
+    border-radius: var(--itemBorderRadius);
+    border: 1px solid var(--borderColor);
+}
+
+.desk-bar p {
+    padding-top: 15px;
+}
+
+.titl-shr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-put img{
+    border-radius: var(--itemBorderRadius);
+}
+
+.desk-bar {
+    padding: 20px;
+}
+
+.btn-desk {
+    display: flex;
+    gap: 14px;
+    padding-top: 15px;
+}
+
+.btn-desk div {
+    color: var(--secondaryTextColor);
+    padding: 3px;
+    border: 1px solid var(--borderColor);
 }
